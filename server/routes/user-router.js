@@ -51,8 +51,7 @@ updateUser = async (req, res) => {
             })
         }
         user.name = body.name
-        user.time = body.time
-        user.rating = body.rating
+
         user
             .save()
             .then(() => {
